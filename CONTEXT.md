@@ -43,3 +43,11 @@ _Avoid_: SKU, listing
 **Store**:
 A grocery retailer whose account KitchenMate places Products into. HEB is the only Store in V1.
 _Avoid_: Retailer, vendor
+
+**Synced List**:
+A Reminders list, bound to one Store, whose reminders KitchenMate takes onto the grocery list and then marks completed. One Synced List in V1 (bound to HEB).
+_Avoid_: Inbox, source list
+
+**Sync Summary**:
+What one sync run took from the Synced List: entries added, merged into existing entries, and left unresolved.
+_Avoid_: Sync report, log
