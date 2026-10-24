@@ -1,7 +1,7 @@
 # 2. Backend: Supabase Free; AI: Gemini free tier
 
 Date: 2026-10-20
-Status: Accepted
+Status: Accepted; AI section superseded by [ADR 3](0003-ai-claude-sonnet-primary.md)
 Ticket: [Choose backend hosting and AI provider](https://github.com/enyiasonye/kitchenmate/issues/13)
 
 ## Context
