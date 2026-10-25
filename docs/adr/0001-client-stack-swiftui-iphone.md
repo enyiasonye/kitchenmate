@@ -4,6 +4,8 @@ Date: 2026-10-20
 Status: Accepted
 Ticket: [Choose the client stack](https://github.com/enyiasonye/kitchenmate/issues/12)
 
+> **Note (2026-10-25):** the owner now uses an iPhone Duo (foldable). "iPhone only" includes it; its layout rules are decided in [Design direction](https://github.com/enyiasonye/kitchenmate/issues/24).
+
 ## Context
 
 KitchenMate needs a native client. The owner's background is Node/TypeScript and they started out leaning towards React Native; they have no prior Swift or mobile experience. The research in [Client stack: SwiftUI vs React Native](https://github.com/enyiasonye/kitchenmate/issues/3) ([findings](https://github.com/enyiasonye/kitchenmate/blob/main/docs/research/client-stack.md)) recommended SwiftUI with moderate confidence. Its main argument was the Mac: there is no practical React Native route to a native Mac app.
