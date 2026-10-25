@@ -4,6 +4,28 @@ A personal recipe manager for a single owner that plans the week's cooking and t
 
 ## Language
 
+### Recipes
+
+**Ingredient**:
+One line of a recipe's ingredient list. Keeps the line's original text exactly as imported, alongside the parts read from it: quantity, unit, name, and note. Its name may resolve to an Item; an Ingredient is the recipe's wording, not the thing bought.
+_Avoid_: Ingredient line, component
+
+**Imported**:
+A recipe's state after an import produced it and before the owner has reviewed it. Not in the library's main view and never drawn into Weekly Picks.
+_Avoid_: Draft (reserved for Weekly Picks), pending
+
+**Saved**:
+A recipe's state once the owner has reviewed and accepted it. Only Saved recipes can be drawn into Weekly Picks.
+_Avoid_: Published, final
+
+**Bookmark**:
+A recipe whose import found no recipe in the captured content. Keeps what was captured (source, title, photo, raw text) and can be retried with more input, or written by AI on the owner's request, to become Imported.
+_Avoid_: Failed import, stub
+
+**AI-written**:
+A lasting mark on a recipe whose content AI composed rather than extracted from its source. Set only when the owner asks AI to write a Bookmark.
+_Avoid_: Generated, synthetic
+
 ### Planning
 
 **Weekly Picks**:
@@ -11,7 +33,7 @@ The set of recipes KitchenMate proposes for the coming week; a draft the owner c
 _Avoid_: Suggestions, recommendations
 
 **Weekly Plan**:
-The recipes the owner has accepted for a given week. Accepting a plan does not by itself put anything on the grocery list.
+The recipes the owner has accepted for a given week, each with its chosen servings. A recipe's last chosen servings is its default the next time it is planned. Accepting a plan does not by itself put anything on the grocery list.
 _Avoid_: Meal plan, menu
 
 **Favorite**:
