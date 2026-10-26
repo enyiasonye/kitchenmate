@@ -13,7 +13,7 @@ The owner's Claude plan now includes $100/month in Claude API credits. [AI provi
 ## Decision
 
 - **Claude Sonnet 5.5 (`claude-sonnet-5-5`) via the Claude API** for recipe extraction (web page, caption, transcript, cookbook photos) and grocery matching, using JSON-schema structured output. It is billed against the plan's API credits.
-- **Groq `whisper-large-v3-turbo` on the free plan** for transcription, unchanged. Claude does not accept audio or video, so video imports always produce a transcript before extraction.
+- **Groq `whisper-large-v3-turbo` on the free plan** for transcription, unchanged. Claude does not accept audio or video, so video imports always produce a transcript before extraction. _Note: [ADR 4](0004-import-pipeline-sanctioned-sources.md) keeps V1 to sanctioned sources with no transcripts or audio, so Whisper is not used in V1._
 - **Gemini Flash (free tier) is an optional fallback**, not built for V1. AI stays behind one backend interface, so a Gemini adapter is one adapter plus config. Until then, a failed extraction shows in the import review form as "retry or fill in by hand", as in ADR 2.
 - **The planned extraction eval** (10–20 real recipes per import type) runs Sonnet 5.5 and Gemini Flash side by side. If Gemini is clearly better at some import type, we reopen this decision. Haiku 4.5 is also tried for grocery matching, where a cheaper model may be good enough.
 - The Anthropic API key lives only in Edge Function secrets, like every other third-party key in ADR 2.
