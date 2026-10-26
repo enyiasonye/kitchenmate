@@ -1,0 +1,52 @@
+# PROTOTYPE — throwaway. Answers "Share sheet payload logger" (issue #21).
+# Generate the Xcode project with: xcodegen generate
+name: PayloadLogger
+options:
+  bundleIdPrefix: com.roehaus.prototype
+  deploymentTarget:
+    iOS: "27.0"
+settings:
+  base:
+    DEVELOPMENT_TEAM: 2XF9ZJU79J
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  PayloadLogger:
+    type: application
+    platform: iOS
+    sources: [App, Shared]
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Payload Logger
+        UILaunchScreen: {}
+    entitlements:
+      path: App/PayloadLogger.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.roehaus.prototype.payloadlogger]
+    dependencies:
+      - target: LogShare
+  LogShare:
+    type: app-extension
+    platform: iOS
+    sources: [Extension, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.roehaus.prototype.PayloadLogger.LogShare
+    info:
+      path: Extension/Info.plist
+      properties:
+        CFBundleDisplayName: Log Payload
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.share-services
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShareViewController
+          NSExtensionAttributes:
+            # Accept everything so no source app is filtered out. Dev builds only.
+            NSExtensionActivationRule: TRUEPREDICATE
+            NSExtensionJavaScriptPreprocessingFile: Preprocess
+    entitlements:
+      path: Extension/LogShare.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.roehaus.prototype.payloadlogger]
