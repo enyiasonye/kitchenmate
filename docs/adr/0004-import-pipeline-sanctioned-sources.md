@@ -40,7 +40,15 @@ Status: Accepted
 - Videos whose recipe is spoken and not written in the caption or a linked site end up as Bookmarks, which need a pasted caption, screenshots, or Write with AI.
 - A site that blocks the backend and isn't shared from Safari waits until the app is next opened.
 - The share extension needs the app group container, a shared keychain session, and a background URLSession. It does no parsing.
-- Instagram behaviour depends on what its share sheet hands over, which the Share sheet payload logger ticket will show.
+- [Share sheet payload logger](https://github.com/enyiasonye/kitchenmate/issues/21) showed what each app hands over on iOS 27.1:
+  - Instagram Reels share only the post URL, never the caption, so Instagram imports are always Bookmarks.
+  - YouTube shares the link as plain text, not a URL.
+  - TikTok shares a `tiktok.com/t/` short link, which is resolved to the full video URL before oEmbed.
+  - The Tasty app shares the tasty.co web page, so it goes through the website path.
+  - Chrome shares only the URL.
+  - Safari shares only the JavaScript preprocessing results (no separate URL), which carry the URL and the full DOM (about 600 KB for a Tasty page).
+  - Photos shares each photo as a JPEG (about 5 MB) and a HEIC file.
+  - The classify step therefore finds URLs inside shared text, and the extension uploads files without loading them into memory.
 
 ## Rejected
 
