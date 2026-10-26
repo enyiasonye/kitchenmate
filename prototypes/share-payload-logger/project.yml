@@ -22,6 +22,10 @@ targets:
       properties:
         CFBundleDisplayName: Payload Logger
         UILaunchScreen: {}
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
     entitlements:
       path: App/PayloadLogger.entitlements
       properties:
@@ -39,12 +43,18 @@ targets:
       path: Extension/Info.plist
       properties:
         CFBundleDisplayName: Log Payload
+        ITSAppUsesNonExemptEncryption: false
         NSExtension:
           NSExtensionPointIdentifier: com.apple.share-services
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShareViewController
           NSExtensionAttributes:
-            # Accept everything so no source app is filtered out. Dev builds only.
-            NSExtensionActivationRule: TRUEPREDICATE
+            # Accept any attachment so no source app is filtered out.
+            # (TRUEPREDICATE is rejected by App Store Connect, which TestFlight goes through.)
+            NSExtensionActivationRule: >-
+              SUBQUERY(extensionItems, $item, SUBQUERY($item.attachments, $a,
+              ANY $a.registeredTypeIdentifiers UTI-CONFORMS-TO "public.item"
+              OR ANY $a.registeredTypeIdentifiers UTI-CONFORMS-TO "public.content"
+              OR ANY $a.registeredTypeIdentifiers UTI-CONFORMS-TO "com.apple.property-list").@count >= 1).@count >= 1
             NSExtensionJavaScriptPreprocessingFile: Preprocess
     entitlements:
       path: Extension/LogShare.entitlements

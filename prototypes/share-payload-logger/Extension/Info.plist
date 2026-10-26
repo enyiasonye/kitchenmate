@@ -20,12 +20,14 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>NSExtensionActivationRule</key>
-			<string>TRUEPREDICATE</string>
+			<string>SUBQUERY(extensionItems, $item, SUBQUERY($item.attachments, $a, ANY $a.registeredTypeIdentifiers UTI-CONFORMS-TO "public.item" OR ANY $a.registeredTypeIdentifiers UTI-CONFORMS-TO "public.content" OR ANY $a.registeredTypeIdentifiers UTI-CONFORMS-TO "com.apple.property-list").@count &gt;= 1).@count &gt;= 1</string>
 			<key>NSExtensionJavaScriptPreprocessingFile</key>
 			<string>Preprocess</string>
 		</dict>
