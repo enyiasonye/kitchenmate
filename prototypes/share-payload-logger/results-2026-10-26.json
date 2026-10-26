@@ -1,0 +1,282 @@
+[
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "byteCount" : 5073045,
+            "summary" : "IMG_9013.jpeg",
+            "type" : "public.jpeg",
+            "valueClass" : "file URL"
+          },
+          {
+            "byteCount" : 2988587,
+            "summary" : "IMG_9013.HEIC",
+            "type" : "public.heic",
+            "valueClass" : "file URL"
+          }
+        ],
+        "registeredTypes" : [
+          "public.jpeg",
+          "public.heic"
+        ]
+      },
+      {
+        "attachmentIndex" : 1,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "byteCount" : 5519809,
+            "summary" : "IMG_9014.jpeg",
+            "type" : "public.jpeg",
+            "valueClass" : "file URL"
+          },
+          {
+            "byteCount" : 3232748,
+            "summary" : "IMG_9014.HEIC",
+            "type" : "public.heic",
+            "valueClass" : "file URL"
+          }
+        ],
+        "registeredTypes" : [
+          "public.jpeg",
+          "public.heic"
+        ]
+      },
+      {
+        "attachmentIndex" : 2,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "byteCount" : 5356030,
+            "summary" : "IMG_9015.jpeg",
+            "type" : "public.jpeg",
+            "valueClass" : "file URL"
+          },
+          {
+            "byteCount" : 3124242,
+            "summary" : "IMG_9015.HEIC",
+            "type" : "public.heic",
+            "valueClass" : "file URL"
+          }
+        ],
+        "registeredTypes" : [
+          "public.jpeg",
+          "public.heic"
+        ]
+      }
+    ],
+    "date" : "2026-10-26T18:17:08Z",
+    "id" : "58D15552-47C0-4605-8CAE-79A5BDF597F8",
+    "itemCount" : 1,
+    "source" : "Photos"
+  },
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "byteCount" : 5362448,
+            "summary" : "IMG_9012.jpeg",
+            "type" : "public.jpeg",
+            "valueClass" : "file URL"
+          },
+          {
+            "byteCount" : 3147542,
+            "summary" : "IMG_9012.HEIC",
+            "type" : "public.heic",
+            "valueClass" : "file URL"
+          }
+        ],
+        "registeredTypes" : [
+          "public.jpeg",
+          "public.heic"
+        ]
+      }
+    ],
+    "date" : "2026-10-26T18:16:33Z",
+    "id" : "EB9340B8-7433-4AFA-A0DF-196281C69498",
+    "itemCount" : 1,
+    "source" : "Photos"
+  },
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "summary" : "https://tasty.co/recipe/creamy-lemon-chicken",
+            "type" : "public.url",
+            "valueClass" : "URL"
+          }
+        ],
+        "registeredTypes" : [
+          "public.url"
+        ]
+      }
+    ],
+    "date" : "2026-10-26T18:14:17Z",
+    "id" : "568605D0-E46C-46C1-AE9F-DE3135F3FB1B",
+    "itemCount" : 1,
+    "source" : "Chrome"
+  },
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "byteCount" : 594665,
+            "summary" : "jsonLdCount: 3\njsonLdHasRecipe: 1\nopenGraph: {\"og:url\":\"https://tasty.co/recipe/creamy-lemon-chicken\",\"og:type\":\"website\",\"og:title\":\"Creamy Lemon Chicken Recipe by Tasty\",\"og:image\":\"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/198fa339577d4857adcb59ab94516ac8/fb.jpg\",\"og:site_name\":\"tasty.co\",\"og:description\":\"Whip up this zesty Creamy Lemon Chicken for a dinner that's bursting with flavor! With tender chicken, a velvety sauce, and a hint of citrus, this dish is sure to become a weeknight favorite.\"}\nselection: \ntitle: Creamy Lemon Chicken Recipe by Tasty\nurl: https://tasty.co/recipe/creamy-lemon-chicken\nhtml (first 300): <html data-app=\"tasty_ui\" data-env=\"prod\" lang=\"en\" class=\"enhanced-ux scrollbar--overlay has-touch is-ios show-ccpa\"><head><meta charset=\"utf-8\"><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"copyright\" content=\"Copyright BuzzFeed, Inc. All rights reserved.\"><meta na… [594555 chars]",
+            "type" : "com.apple.property-list",
+            "valueClass" : "JS preprocessing results"
+          }
+        ],
+        "registeredTypes" : [
+          "com.apple.property-list"
+        ]
+      }
+    ],
+    "contentText" : "Creamy Lemon Chicken Recipe by Tasty",
+    "date" : "2026-10-26T18:13:17Z",
+    "id" : "F34D5744-4297-4CC2-98CD-764C067C0C93",
+    "itemCount" : 1,
+    "source" : "Safari"
+  },
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "byteCount" : 30,
+            "summary" : "One-Pan Chicken Adobo by Tasty",
+            "type" : "public.plain-text",
+            "valueClass" : "String"
+          }
+        ],
+        "registeredTypes" : [
+          "public.plain-text"
+        ]
+      },
+      {
+        "attachmentIndex" : 1,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "summary" : "https://tasty.co/recipe/one-pan-chicken-adobo",
+            "type" : "public.url",
+            "valueClass" : "URL"
+          }
+        ],
+        "registeredTypes" : [
+          "public.url"
+        ]
+      }
+    ],
+    "contentText" : "One-Pan Chicken Adobo by Tasty",
+    "date" : "2026-10-26T18:08:16Z",
+    "id" : "F250ACE9-096F-4932-9611-0B5938078897",
+    "itemCount" : 1,
+    "source" : "Tasty"
+  },
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "summary" : "https://www.tiktok.com/t/ZPLA7Gdso/",
+            "type" : "public.url",
+            "valueClass" : "URL"
+          }
+        ],
+        "registeredTypes" : [
+          "public.url"
+        ]
+      }
+    ],
+    "date" : "2026-10-26T18:07:51Z",
+    "id" : "1C14C09C-1500-4938-9173-7489736FF8CD",
+    "itemCount" : 1,
+    "source" : "TikTok"
+  },
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "summary" : "https://www.instagram.com/reel/DQQBAP9k1r6/?cplk=M3hnbGd5OGlrNWYz",
+            "type" : "public.url",
+            "valueClass" : "URL"
+          }
+        ],
+        "registeredTypes" : [
+          "public.url"
+        ]
+      }
+    ],
+    "date" : "2026-10-26T18:01:38Z",
+    "id" : "92E3D3EE-C117-4678-9239-7F3D837990D3",
+    "itemCount" : 1,
+    "source" : "Instagram"
+  },
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "byteCount" : 58,
+            "summary" : "https://youtube.com/shorts/JEuMe2FzMhU?is=FeP5ZCcKoiAJLZdf",
+            "type" : "public.plain-text",
+            "valueClass" : "String"
+          }
+        ],
+        "registeredTypes" : [
+          "public.plain-text"
+        ]
+      }
+    ],
+    "contentText" : "https://youtube.com/shorts/JEuMe2FzMhU?is=FeP5ZCcKoiAJLZdf",
+    "date" : "2026-10-26T17:59:59Z",
+    "id" : "5BDE73EF-A9B5-4119-8141-A77CB6DB6EE1",
+    "itemCount" : 1,
+    "source" : "YouTube"
+  },
+  {
+    "attachments" : [
+      {
+        "attachmentIndex" : 0,
+        "itemIndex" : 0,
+        "loads" : [
+          {
+            "byteCount" : 59,
+            "summary" : "https://youtube.com/watch?v=mUm84fYPpgU&is=1rtMtQr3DAwwUxGD",
+            "type" : "public.plain-text",
+            "valueClass" : "String"
+          }
+        ],
+        "registeredTypes" : [
+          "public.plain-text"
+        ]
+      }
+    ],
+    "contentText" : "https://youtube.com/watch?v=mUm84fYPpgU&is=1rtMtQr3DAwwUxGD",
+    "date" : "2026-10-26T17:59:19Z",
+    "id" : "68393807-1643-4D87-A266-DD9B46A0A0C3",
+    "itemCount" : 1,
+    "source" : "YouTube"
+  }
+]
