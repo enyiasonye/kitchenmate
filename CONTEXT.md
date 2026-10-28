@@ -73,3 +73,7 @@ _Avoid_: Inbox, source list
 **Sync Summary**:
 What one sync run took from the Synced List: entries added, merged into existing entries, and left unresolved.
 _Avoid_: Sync report, log
+
+**Manual mode**:
+The grocery list's state while KitchenMate can't place Products into the Store's account. The owner adds each entry's Product in the Store's own app and ticks it off; pending entries go to the Store automatically once it is reachable again.
+_Avoid_: Offline mode, fallback mode
