@@ -22,6 +22,7 @@ targets:
       properties:
         CFBundleDisplayName: Sync Probe
         UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         ITSAppUsesNonExemptEncryption: false
         NSRemindersFullAccessUsageDescription: Reads your grocery list to test when the daily sync runs. Nothing is changed.
         UIBackgroundModes: [fetch, remote-notification]
@@ -29,6 +30,7 @@ targets:
     settings:
       base:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
     entitlements:
       path: App/SyncTriggerProbe.entitlements
       properties:
