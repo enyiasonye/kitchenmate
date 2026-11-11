@@ -77,3 +77,11 @@ _Avoid_: Sync report, log
 **Manual mode**:
 The grocery list's state while KitchenMate can't place Products into the Store's account. The owner adds each entry's Product in the Store's own app and ticks it off; pending entries go to the Store automatically once it is reachable again.
 _Avoid_: Offline mode, fallback mode
+
+**Usually have**:
+A flag on an Item the owner normally keeps stocked (salt, oil, spices). Such Items start unticked in the grocery review sheet, in their own collapsed section; dragging a row into or out of that section sets or clears the flag.
+_Avoid_: Pantry staple, always-have
+
+**Add to groceries**:
+The deliberate step that turns a Weekly Plan (or one recipe) into Grocery List entries, through a review sheet of combined Items. It only adds to the Grocery List; it never sends anything to the Store.
+_Avoid_: Build list, generate list
