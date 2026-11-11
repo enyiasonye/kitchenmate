@@ -1,0 +1,22 @@
+name: APNsSpike
+options:
+  bundleIdPrefix: com.roehausdigital
+  deploymentTarget:
+    iOS: "27.0"
+settings:
+  DEVELOPMENT_TEAM: 2XF9ZJU79J
+  CODE_SIGN_STYLE: Automatic
+targets:
+  APNsSpike:
+    type: application
+    platform: iOS
+    sources: [App]
+    entitlements:
+      path: App/APNsSpike.entitlements
+      properties:
+        aps-environment: development
+    info:
+      path: App/Info.plist
+      properties:
+        UILaunchScreen: {}
+        CFBundleDisplayName: APNs Spike
