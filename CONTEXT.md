@@ -75,7 +75,7 @@ What one sync run took from the Synced List: entries added, merged into existing
 _Avoid_: Sync report, log
 
 **Manual mode**:
-The grocery list's state while KitchenMate can't place Products into the Store's account. The owner adds each entry's Product in the Store's own app and ticks it off; pending entries go to the Store automatically once it is reachable again.
+The grocery list's state while KitchenMate can't place Products into the Store's account. The owner adds each entry's Product in the Store's own app and ticks it off; entries already sent with Send go to the Store automatically once it is reachable again.
 _Avoid_: Offline mode, fallback mode
 
 **Usually have**:
@@ -85,3 +85,19 @@ _Avoid_: Pantry staple, always-have
 **Add to groceries**:
 The deliberate step that turns a Weekly Plan (or one recipe) into Grocery List entries, through a review sheet of combined Items. It only adds to the Grocery List; it never sends anything to the Store.
 _Avoid_: Build list, generate list
+
+**Grocery List**:
+KitchenMate's own list of what to buy, one entry per Item (or per unresolved text). It is fed by Add to groceries and the Synced List, and it is the only thing that places Products into the Store's account.
+_Avoid_: Shopping list, cart
+
+**Entry**:
+One line on the Grocery List: an Item (or unresolved text), a buy count, the recipes and reminders that fed it, an optional one-time Product, and whether it has been sent to the Store and ticked off.
+_Avoid_: List item, line item
+
+**Send**:
+The owner's explicit action that places every pending entry's Product into the Store's account, adding only what was not already sent. Editing a sent entry makes it pending again.
+_Avoid_: Sync, push, checkout
+
+**Done shopping**:
+The owner's action that clears ticked and sent entries from the Grocery List once a shop is finished. It never changes the Store's account.
+_Avoid_: Clear list, reset
